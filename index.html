@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image and Agreement</title>
+  <style>
+    /* Add some basic styling to the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .image-container {
+      text-align: center;
+    }
+    .image-container img {
+      width: 50%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .agreement-container {
+      padding: 20px;
+      text-align: center;
+    }
+    .agreement-header {
+      margin-top: 0;
+    }
+    .agreement-button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .agreement-button:hover {
+      background-color: #3e8e41;
+    }
+    .form-container {
+      padding: 20px;
+      text-align: center;
+    }
+    .form-header {
+      margin-top: 0;
+    }
+    .form-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 50%;
+    }
+    .form-button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-button:hover {
+      background-color: #3e8e41;
+    }
+    @media only screen and (max-width: 768px) {
+      .container {
+        max-width: 90%;
+        margin: 20px auto;
+      }
+      .image-container img {
+        width: 80%;
+      }
+      .form-input {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <!-- Image on top -->
+      <img src="stamp.jpg" alt="Image Description">
+    </div>
+    <div class="agreement-container">
+      <!-- Agreement below -->
+      <h2 class="agreement-header">Banogi kya ?</h2>
+      <h3 class="agreement-header">Agreement</h3>
+      <p style="text-align: justify;">Please read the following agreement carefully before proceeding.</p>
+      <p style="text-align: justify;">1️⃣ Mandatory Good Morning & Good Night Messages 🌞🌙 – Both parties must send at least one cute or funny message at the start and end of the day. Bonus points for memes.</p>
+      <p style="text-align: justify;">2️⃣ Daily Reel Exchange 🎬😂 – Partners must send at least 3 reels per day (romantic, funny, or “this reminded me of us” type). Failure to do so may result in puppy eyes guilt-tripping.</p>
+      <p style="text-align: justify;">3️⃣ No Ignoring Texts Clause 📵 – Ignoring messages for too long without a valid reason (e.g., zombie apocalypse, saving the world) will result in extra love-bombing & random “I miss you” texts.</p>
+      <p style="text-align: justify;">4️⃣ Arguments & Forgiveness Rule ❤️ – No fights allowed on Valentine’s Day! If a disagreement happens, both partners must solve it within 10 minutes through hugs, jokes, or a “let’s just eat and forget” truce.</p>
+      <button class="agreement-button" onclick="showForm()">I Agree</button>
+    </div>
+    <div class="form-container" id="form-container" style="display: none;">
+      <h2 class="form-header">Registration Form</h2>
+      <form>
+        <input type="text" class="form-input" placeholder="Name" required>
+        <br><br>
+        <input type="text" class="form-input" placeholder="Instagram ID" required>
+        <br><br>
+        <button class="form-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById("form-container").style.display = "block";
+    }
+  </script>
+</body>
+</html>
